@@ -1,0 +1,788 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo img {
+    width: 120px;
+    filter: brightness(0); /* Makes the logo black */
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li a {
+    font-size: 18px;
+    color: #333;
+}
+
+.btn-get-started {
+    background-color: #FF6F3E;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 30px;
+    align-self: center;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.hero-content {
+    max-width: 45%;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 .purple {
+    color: #A73AC7;
+}
+
+.hero-content h1 .dash {
+    display: inline-block;
+    width: 100px; /* Increased width */
+    height: 18px; /* Thicker bar */
+    background-color: #A73AC7;
+    margin-left: 110px; /* Increased space between "TIME" and the bar */
+    border-radius: 10px;
+}
+
+
+.hero-content p {
+    font-size: 16px;
+    font-weight: 300; /* Thinner text */
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    position: relative;
+    max-width: 55%; /* Increased image section to 55% for larger image */
+}
+
+.hero-image img {
+    width: auto;
+    height: auto; /* Ensure image scales properly */
+    border-radius: 15px;
+}
+
+.image-navigation {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.image-navigation .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+}
+
+.image-navigation .dot.active {
+    background-color: #A73AC7;
+}
+
+/* Margins and Spacing */
+.hero-content, .hero-image {
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section styling */
+.about-section {
+    background-color: #f3eafc; /* Light purple background */
+    padding: 50px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Image grid styling */
+.about-images {
+    display: flex;
+    margin-right: 40px; /* Space between images and text */
+}
+
+.long-img img {
+    width: auto; /* Long image width */
+    height: auto;
+    border-radius: 10px;
+}
+
+.small-imgs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px; /* Space between long and small images */
+}
+
+.small-img {
+    width: auto; /* Width for smaller images */
+    height: auto;
+    margin-bottom: 20px; /* Space between two small images */
+    border-radius: 10px;
+}
+
+/* Text section beside the image grid */
+.about-text {
+    max-width: 500px; /* Ensure text doesn't overflow */
+}
+
+/* Thin bar and 'About Us' */
+.about-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.thin-bar {
+    width: 40px;
+    height: 2px;
+    background-color: black;
+    margin-right: 10px;
+}
+
+.about-us {
+    font-size: 16px;
+    font-weight: 300;
+    color: black;
+}
+
+/* Caption and text styling */
+.about-text h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.purple-text {
+    color: #A73AC7;
+}
+
+.thin-text {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+/* "See Our Photos" button */
+.btn-see-photos {
+    display: inline-block;
+    background-color: #FF6F3E;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.portfolio-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.portfolio-header {
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.filter-box {
+    margin-bottom: 20px;
+}
+
+.filter-option {
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 10px;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.filter-option:hover {
+    text-decoration: underline;
+}
+
+.filter-option.active {
+    color: purple;
+    text-decoration: underline;
+}
+
+.photo-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.photo-table td {
+    padding: 10px;  /* Adjusting padding for better spacing */
+    vertical-align: top;
+    margin: 5px; /* Added margin for spacing */
+}
+
+
+.long-photo img {
+    width: auto; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.square-photo img {
+    width: auto; /* Adjust size for square images */
+    height:auto; /* Keep square shape */
+}
+@media (max-width: 768px) {
+    .photo-table {
+        display: block; /* Allow stacking on smaller screens */
+    }
+    .photo-table tr {
+        display: block; /* Each row will be block */
+        margin-bottom: 15px; /* Space between rows */
+    }
+    .photo-table td {
+        display: block; /* Stack photos vertically */
+        margin: 0 auto; /* Center align */
+        max-width: 90%; /* Limit width on smaller screens */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.prices-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Optional background color */
+}
+
+.prices-header {
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.prices-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between boxes */
+    margin: 0 auto; /* Center the container */
+    max-width: 1000px; /* Max width for the price section */
+}
+
+.price-box {
+    background-color: #fff; /* White background for boxes */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    text-align: center;
+    flex: 1; /* Equal space for each box */
+    min-width: 250px; /* Minimum width for each box */
+}
+
+.box-title {
+    font-weight: bold;
+    color: black; /* Black text */
+}
+
+.box-description {
+    font-weight: 300; /* Thin text */
+}
+
+.box-price {
+    font-size: 1.5em; /* Bigger font size for price */
+    font-weight: bold; /* Bold price */
+    display: block; /* Block display for spacing */
+    margin: 10px 0; /* Margin above and below price */
+}
+
+.purchase-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orange; /* Default orange background */
+    color: white; /* White text color */
+    border: none;
+    border-radius: 20px; /* Rounded corners */
+    
+    
+}
+
+.black-background {
+    background-color: black; /* Black background for second box */
+    color:white
+}
+
+.white-background {
+    background-color: white; /* White background for the button */
+    color: black; /* Black text for button */
+}
+
+.white-text {
+    color: white; /* White text for title in black box */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section styling */
+.about-section {
+    background-color: #f3eafc; /* Light purple background */
+    padding: 50px;
+}
+
+/* Container holding image and text side by side */
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Aligns images and text vertically centered */
+    gap: 40px; /* Space between image and text */
+}
+
+/* Image styling */
+.long-img img {
+    width: 400px; /* Adjust the image width as needed */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Text section on the left */
+.about-text {
+    max-width: 500px; /* Restrict text width */
+}
+
+/* Thin bar and 'What Our Clients Say' */
+.about-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.thin-bar {
+    width: 40px;
+    height: 2px;
+    background-color: black;
+    margin-right: 10px;
+}
+
+.about-us {
+    font-size: 16px;
+    font-weight: 300;
+    color: black;
+}
+
+/* Caption and text styling */
+.about-text h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.purple-text {
+    color: #A73AC7;
+}
+
+.thin-text {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+/* Button Section Styling */
+.btn-section {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between purple button and arrow buttons */
+}
+
+/* Purple button with name and round image */
+.btn-client {
+    display: inline-flex;
+    align-items: center;
+    background-color: rgb(198, 173, 238);
+
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.client-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px; /* Space between image and text */
+}
+
+/* Arrow buttons styling */
+.arrow-buttons {
+    display: flex;
+    gap: 15px; /* Space between the two arrow buttons */
+}
+
+.arrow {
+    background-color: #ddd;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.left-arrow {
+    color: black;
+}
+
+.right-arrow {
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.photo-gallery {
+    text-align: center;
+    margin: 50px 0;
+  }
+  
+  /* Header layout with logo and join button */
+  .gallery-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .gallery-logo {
+    width: auto; /* Adjust the logo size as needed */
+  }
+  
+  .join-now-btn {
+    background-color: #FF6F3E;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  
+  .gallery-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-gap: 20px; /* Space between photos */
+    margin: 0 auto;
+    max-width: 900px; /* Keeps photos within a defined space */
+  }
+  
+  .photo-box {
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .photo-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  /* Responsive layout for smaller screens */
+  @media screen and (max-width: 768px) {
+    .gallery-container {
+      grid-template-columns: 1fr; /* Switch to 1 column for smaller screens */
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .contact-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: white; /* Light background for contrast */
+  }
+  
+  /* Contact form styles */
+  .contact-form {
+    flex: 1; /* Allows the form to take up available space */
+    margin-right: 20px; /* Space between form and info box */
+  }
+  
+  .question-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+  }
+  
+  .contact-paragraph {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  input, textarea {
+    width: 100%; /* Full width for input fields */
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Light border */
+  }
+  
+  /* Contact info box styles */
+  .contact-info {
+    flex: 1; /* Allows the info box to take up available space */
+    background-color: #f3eafc; /* Purple background */
+    color: black;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    margin-left: 20px; /* Space between form and info box */
+  }
+  
+  .get-in-touch {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .info-text {
+    margin-bottom: 20px;
+  }
+  
+  /* Contact item styles */
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .icon {
+    width: 20px; /* Adjust icon size */
+    margin-right: 10px; /* Space between icon and text */
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-section {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-logo {
+    max-width: 150px; /* Adjust as necessary */
+}
+
+.footer-links {
+    color: black; /* Black text for links */
+    text-align: center;
+}
+
+.footer-link {
+    text-decoration: underline; /* Underlined text */
+    font-weight: 300; /* Thin text */
+    color: white; /* Black color */
+}
+
+.social-media {
+    display: flex;
+    gap: 10px; /* Space between social icons */
+}
+
+.social-icon {
+    max-width: 30px; /* Adjust as necessary */
+}
